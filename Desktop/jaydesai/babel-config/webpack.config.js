@@ -36,7 +36,8 @@ const config = {
       template: './client/dist/index.html',
       filename: 'index.html',
       hash: true
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
   // OPTIONAL
   // Reload On File Change
